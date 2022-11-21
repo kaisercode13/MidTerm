@@ -1,4 +1,4 @@
-<h3 align="center"> FrontEnd Bootcamp </h3>
+<h3 align="center"> MidTerm </h3>
 
 ## Enlace Trello
 
