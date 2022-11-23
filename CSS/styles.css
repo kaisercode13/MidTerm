@@ -104,18 +104,12 @@
 /* Burger Menu */
 
 .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
+    display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    
   }
   
 
@@ -815,20 +809,28 @@
 
   /* Media Queries */
 
+  @media all and (min-width: 992px) {
+  .burger {
+    display: none;
+  }
+}
+  
   @media only screen and (max-width: 991px) {
+
+    /* Navbar */
     .container-navbar {
       padding-right: 30px;
       padding-left: 30px;
     }
   
-    .navbar-desktop-menu {
+    .navbar-menu-desktop {
       display: none;
     }
   
     .navbar-contact-button {
       display: none;
     }
-  
+    /* Hero Section */
     .hero-section {
       padding-top: 0px;
     }
@@ -874,7 +876,7 @@
     .card-2 {
         display: none;
     }
-  
+    /* Companies Logos */
     .logos-grid {
       justify-items: center;
       align-items: center;
@@ -886,7 +888,26 @@
     .amazon-logo {
       display: none;
     }
-    
+
+     /* Projects Section */
+     .projects-section {
+        margin-top: 150px;
+        margin-left: 40px;
+      }
+      .projects-section h2 {
+        text-align: left;
+        margin: 50px 0;
+        font-size: 2.3em;
+      }
+      .projects-box {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: auto auto;
+        margin-top: 80px;
+        
+      }
+
+    /* Testimonials Section */
     .testimonials-section {
       height: 100%;
       margin-top: 60px;
@@ -925,5 +946,10 @@
         display: none;
     }
   
+    /* Services Section */
+
     
-  }
+    }
+
+
+  
