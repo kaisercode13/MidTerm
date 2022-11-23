@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Circle Agency</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
     <!-- Header - NavBar Section -->
     <header>
-        <div id="navbar">
-            <nav class="container-navbar">
-                <a href="./index.html" class="navbar-logo"></a>
+        <div class="navbar">
+            <nav class="container-navbar container">
+                <img src="./SRC/logos/circle.svg" alt="Circle Logo">
                 <div class="navbar-menu-desktop">
                     <a href="#" class="navbar-link">Home</a>
                     <a href="#" class="navbar-link">Projects</a>
@@ -21,7 +21,7 @@
                 <a href="./contact.html" class="navbar-contact-button">Contact Us</a>
             </nav>
             <!-- Mobile/Burger Menu -->
-            <div id="mobile-menu">
+            <!-- <div id="mobile-menu">
                 <ul class="burger-menu">
                     <div class="burger-mobile">
                         <a href="#" class="navbar-link">Home</a>
@@ -30,15 +30,15 @@
                         <a href="./contact.html" class="navbar-contact-button">Contact Us</a>  
                     </div>
                 </ul>
-                <button class="burger-button">
+                <button class="burger-button"> -->
                     <!-- Falta código aquí -->
-                </button>
+                <!-- </button> -->
             </div>
         </div>
     </header>
 
     <!-- Container 1 - Hero Section -->
-    <section id="hero-section" class="container">
+    <section class="hero-section container">
         <div class="hero-main">
             <div class="hero-left-div">
                 <h1 class="hero-h1">Empower Your Business With Stunning Design!</h1>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Container 2 - Companies Logos - Hero Section -->
-        <div id="companies-logos" class="container">
+        <div class="companies-logos container">
             <div class="logos-grid">
                 <div class="company-logo">
                     <img src="../SRC/logos/airbnb-logo.svg" alt="airbnb-logo">
@@ -80,59 +80,52 @@
     </section>
 
     <!-- Container 3 - Projects Section -->
-    <section id="projects-section" class="container">
-        <h2>Recent Projects</h2>
-        <div class="projects-boxes">
-            <div class="projects-img">
-                <img src="../SRC/projects-section/1.jpg" alt="project1 img">
-                <div class="projects-description">
-                    <h3 class="projects-title">Simplify</h3>
-                    <div class="projects-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+    <section class="projects-section">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="projects-box">
+                <div class="projects">
+                    <img src="./SRC/projects-section/1.jpg" alt="Project1">
+                    <div class="projects-description">
+                        <h3>Simplify</h3>
+                        <p>UI Design & App Development</p>
+                        <a href="#">Lern More</a>
                     </div>
-                    <a href="#">Learn More</a>
+                </div>
+                <div class="projects">
+                    <img src="./SRC/projects-section/2.jpg" alt="Project2">
+                    <div class="projects-description">
+                        <h3>Dashcoin</h3>
+                        <p>Web Development</p>
+                        <a href="#">Lern More</a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="./SRC/projects-section/3.jpg" alt="Project3">
+                    <div class="projects-description">
+                        <h3>Vectorify</h3>
+                        <p>User Experience Design</p>
+                        <a href="#">Lern More</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="projects-boxes">
-            <div class="projects-img">
-                <img src="../SRC/projects-section/2.jpg" alt="project2 img">
-                <div class="projects-description">
-                    <h3 class="projects-title">DashCoin</h3>
-                    <div class="projects-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    </div>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="projects-boxes">
-            <div class="projects-img">
-                <img src="../SRC/projects-section/3.jpg" alt="project3 img">
-                <div class="projects-description">
-                    <h3 class="projects-title">Vectorify</h3>
-                    <div class="projects-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    </div>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
+        
     </section>
 
     <!-- Container 4 - Testimonials Section -->
-    <section id="testimonials-section">
-    <div class="testimonials-container">
+    <section class="testimonials-section">
+    <div class="container">
         <div class="testimonials-box">
-            <h3 class="testimonials-heading">Hear What Our Clients Have To Say</h3>
-            <div class="testimonials-text">
+            <h3>Hear What Our Clients Have To Say</h3>
                 <p>"Circle helped us throught ever stage of our startip. We really enjoyed working with you."</p>
-            </div>
             <div class="testimonials-client">
                 <div class="client-img"></div>
-                <div class="client-name"><p>Kristin Watson</p></div>
+                <div class="client-info">
+                <div class="client-name">Kristin Watson</div>
                 <div class="client-web">Booking.com</div>
             </div>
+        </div>
         </div>
         <div class="emoji-top-left"></div>
         <div class="emoji-bottom-left"></div>
@@ -142,7 +135,7 @@
     </section>
 
     <!-- Container 5 - Services Section -->
-    <section id="services-section" class="container">
+    <section class="services-section container">
         <div class="services-main">
             <h2 class="services-title">Our Services</h2>
             <div class="services-grid">
@@ -181,7 +174,7 @@
     </section>
 
     <!-- Container 6 - Subscribe Section -->
-    <section id="subscribe-section">
+    <section class="subscribe-section">
         <div class="subscribe-form">
             <h3 class="subscribe-title">Do you have any questions?</h3>
             <p class="subscribe-text">Let us help you!</p>
@@ -204,11 +197,10 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-main">
+    <footer class="footer">
+        <div class="container">
             <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-logo"></div>
+                <img src="../SRC/logos/circle.svg" alt="Circle Logo">
                     <div class="footer-address">
                         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
                     </div>
