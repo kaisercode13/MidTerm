@@ -36,4 +36,4 @@ Trabajo de responsive que está llevando más de lo esperado.
 
 Creación del código JS para realizar los fetch de proyectos y para acabar de configurar correctamente el formulario de contacto.
 
-Pelea con el burger menu, parece que al final sale la cosa.
+Pelea con el burger menu, parece que al final sale la cosa. Gracias Jarko por el video.
