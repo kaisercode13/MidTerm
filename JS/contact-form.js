@@ -9,7 +9,7 @@ function sendData(event) {
     let message = document.getElementById("message").value;
   
     //API Fetch
-    fetch("https://jsonplaceholder.typicode.com/posts", {
+    fetch("https://jsonplaceholder.typicode.com/users", {
       method: "POST",
       headers: {
         Accept: "text/plain, application/json, */*",
@@ -19,21 +19,26 @@ function sendData(event) {
         name: name,
         email: email,
         phone: phone,
-        message: message,
+        message: catchPhrase,
       }),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+      .then((data) => { console.log(data); })
+      .then(() => {
+        let formDone = document.querySelector(".form-done");
+        formDone.style.display = "block";
+        console.log("YAY!");
+      })
+      
+      .then(() => inputs.reset())
+      .catch((error) => {
+        let formFail = document.querySelector(".form-fail");
+        formFail.style.display = "block";
+        console.log("ERROR");
       });
   
-    //Reset valores iniciales
-    document.querySelector("#form-done").style.display = "block";
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("message").value = "";
+   
   }
   
   //Evetn Listener para el botón submit
-  document.querySelector("#form-5").addEventListener("submit", sendData);
+  let inputs = document.querySelector("#addPost").addEventListener("submit", sendData);
