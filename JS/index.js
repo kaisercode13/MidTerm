@@ -56,14 +56,14 @@ const getSimplifyText = () => {
 // Hamburger Manu
 
 const burger = document.querySelector(".burger");
-const navMenu = document.querySelector(".navbar-menu-desktop");
+const navMenu = document.querySelector(".nav-menu");
 
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll(".navbar-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     burger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
