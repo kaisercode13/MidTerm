@@ -23,7 +23,7 @@
             </div>
         </div>
       <!-- Burger Menu -->
-      <div class="burger">
+      <!-- <div class="burger">
         <ul class="menu">
           <div class="mobile-menu">
             <a href="#index.html" class="nav-link">Home</a>
@@ -36,7 +36,7 @@
           <i class="closeIcon material-icons">menu</i>
         </button>
       </div>
-    </div>   
+    </div>    -->
     </header>
 
     <!-- Container 1 - Hero Section -->
@@ -99,7 +99,7 @@
                     <div class="projects-description">
                         <h3>Dashcoin</h3>
                         <p>Web Development</p>
-                        <a href="#">Learn More</a>
+                        <a href="./HTML/simplify.html">Learn More</a>
                     </div>
                 </div>
                 <div class="projects">
@@ -107,7 +107,7 @@
                     <div class="projects-description">
                         <h3>Vectorify</h3>
                         <p>User Experience Design</p>
-                        <a href="#">Learn More</a>
+                        <a href="./HTML/simplify.html">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -176,27 +176,39 @@
     </section>
 
     <!-- Container 6 - Subscribe Section -->
-    <section class="subscribe-section">
-        <div class="subscribe-form">
-            <h3 class="subscribe-title">Do you have any questions?</h3>
-            <p class="subscribe-text">Let us help you!</p>
+       <section>
+        <div class="subscribe-section">
+          <div class="subscribe-form">
+            <h1 class="subscribe-title">Do you have any questions?</h1>
+            <div class="subscribe-text">Let us help you!</div>
             <div class="form-raw">
-            <form action=""
+              <form
                 id="email-form"
-                class="subs-form">
-            <div class="form-text-wrapper">
-                <div class="form-text-img"></div>
-                <input type="email"
-                class="text-field"
-                placeholder="Enter your email">
+                name="email-form"
+                data-name="Email Form"
+                method="get"
+                class="subs-form"
+                aria-label="Email Form"
+              >
+                <div class="textfield-wrapper">
+                  <div class="textfield-icon"></div>
+                  <input
+                    type="email"
+                    class="text-field"
+                    maxlength="256"
+                    name="email-2"
+                    data-name="Email 2"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <input type="submit" value="Suscribe" class="subscribe-button" />
+              </form>
             </div>
-            <input type="submit"
-            value="Subscribe"
-            class="subscribe-button">               
-            </form>
+          </div>
         </div>
-        </div>
-    </section>
+      </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">

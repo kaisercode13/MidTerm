@@ -611,7 +611,7 @@
     bottom: auto;
     width: 30px;
     height: 30px;
-    background-image: url(../src/suscribe-section/icon/mail.svg);
+    background-image: url(../SRC/newsletter/icon/mail.svg);
     background-position: 50% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -897,7 +897,6 @@
       .projects-section h2 {
         text-align: left;
         margin: 50px 0;
-        font-size: 2.3em;
       }
       .projects-box {
         display: grid;
@@ -945,9 +944,93 @@
     .emoji-bottom-right {
         display: none;
     }
+
+    /* Subscribe Section */
+    .suscribe-section {
+      width: 100%;
+    }
   
+    .suscribe-form {
+      max-width: 100%;
+    }
+  
+    .suscribe-title {
+      font-size: 30px;
+    }
+  
+    .form-raw {
+      flex-direction: column;
+    }
+  
+    .subs-form {
+      flex-direction: column;
+    }
+  
+    .subscribe-button {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+
     /* Services Section */
 
+
+    /* Footer */
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .footer-address p {
+      text-align: center;
+    }
+  
+    .footer-links {
+      margin-top: 20px;
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    
+  }
+    @media only screen and (max-width: 773px) {
+    /* Services Section */
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .services-box {
+      width: 100%;
+    }
+
+    .services-title {
+      text-align: center;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      margin-top: 150px;
+      margin-left: 40px;
+    }
+    .projects-section h2 {
+      text-align: center;      
+    }
+    
+    .projects-box {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .projects {
+      width: 100%;      
+    }
     
     }
 

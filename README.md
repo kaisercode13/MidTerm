@@ -21,3 +21,11 @@ Creación de index.html y finalización de la primera versión de la misma.
 Creación del archivo styles.css y primer update que incluye el reset de CSS así como la importación de las fuentes.
 
 ## Miércoles 23 de noviembre
+
+Acabo con la mayor parte del HTML, los cambios que se produzcon en este sentido serán menores de ahora en adelante (inclusión clases mayormente).
+
+Remato estructura general de CSS e inicio los trabajos para adaptar los diferentes formatos responsive.
+
+Se complica el tema del burger y lo dejamos para mañana.
+
+Día de mucho retoque estético.
