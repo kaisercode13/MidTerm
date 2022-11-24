@@ -103,14 +103,7 @@
 
 /* Burger Menu */
 
-.menu {
-    display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-    
-  }
+
   
 
   /* Container 1 - Hero Section */
@@ -806,7 +799,8 @@
   .primary-btn-contact-form:hover {
     background-color: #292e47;
   }
-
+  
+/* ----------------- */
   /* Simplify Page CSS */
 
   .simplify-section { 
@@ -1047,8 +1041,18 @@ p {
       margin-left: 0px;
     }
 
-    /* Services Section */
+/* Services Section */
+.services-grid {
+  grid-template-columns: 1fr;
+}
 
+.services-box {
+  width: 100%;
+}
+
+.services-title {
+  text-align: center;
+}
 
     /* Footer */
 
@@ -1073,20 +1077,10 @@ p {
       grid-template-rows: auto;
     }
     
+    
   }
     @media only screen and (max-width: 773px) {
-    /* Services Section */
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .services-box {
-      width: 100%;
-    }
-
-    .services-title {
-      text-align: center;
-    }
+    
 
     /* Projects Section */
     .projects-section {
@@ -1107,6 +1101,64 @@ p {
     }
     
     }
+
+    /* Contact Page */
+
+    /* .contact-heading {
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+  
+    .contact-form {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .contact-form-wrapper {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto;
+    }
+  
+    #form-1 {
+      grid-row-start: span 1;
+      grid-row-end: span 1;
+      grid-column-start: span 5;
+      grid-column-end: span 5;
+    }
+  
+    #form-2 {
+      grid-row-start: span 1;
+      grid-row-end: span 1;
+      grid-column-start: span 5;
+      grid-column-end: span 5;
+    }
+  
+    #form-3 {
+      grid-row-start: span 1;
+      grid-row-end: span 1;
+      grid-column-start: span 5;
+      grid-column-end: span 5;
+    }
+  
+    #form-4 {
+      grid-row-start: span 3;
+      grid-row-end: span 3;
+      grid-column-start: span 5;
+      grid-column-end: span 5;
+    }
+  
+    #form-5 {
+      grid-row-start: span 1;
+      grid-row-end: span 1;
+      grid-column-start: span 5;
+      grid-column-end: span 5;
+    }
+  
+    .primary-btn-contact-form {
+      width: 94%;
+    } */
+
 
 
   

@@ -1,5 +1,3 @@
-//Post method
-
 //PreventDefault para evitar que la página recargue
 function sendData(event) {
     event.preventDefault();
@@ -38,4 +36,4 @@ function sendData(event) {
   }
   
   //Evetn Listener para el botón submit
-  document.querySelector("#form-5").addEventListener("click", sendData);
+  document.querySelector("#form-5").addEventListener("submit", sendData);
