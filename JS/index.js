@@ -16,7 +16,7 @@ async function getData() {
    
     let dataCard = "";
     info.forEach((item) => {
-      let cardInfo = `<article class="projects">
+      let cardInfo = `<section class="projects">
                               <img
                                   src="../src/projects-section/${item.id}.jpg"
                                   alt="imagen"
@@ -29,7 +29,7 @@ async function getData() {
                                   <div class="text data-description">${item.body}</div>
                                   <a href="../HTML/simplify.html" class="learnMore">learn more</a>
                               </div>
-                          </article>`;
+                          </section>`;
   
       return (dataCard += cardInfo);
     });
@@ -43,10 +43,10 @@ renderData();
 // Simplify Page --- Main Project Description
 
 async function getTextData() {
-    let url = "https://jsonplaceholder.typicode.com/posts/1";
+    let urlPost = "https://jsonplaceholder.typicode.com/posts/1";
     try {
-      let res = await fetch(url);
-      return await res.json();
+      let resPost = await fetch(urlPost);
+      return await resPost.json();
     } catch (error) {
       console.log(error);
     }
@@ -58,12 +58,12 @@ async function getTextData() {
     let dataText = "";
     infoText.forEach((item) => {
       let cardText = `
-    <div class="simplify-text">${item.body}</div>`;
+    <p class="simplify-text">${item.body}</div>`;
   
       return (dataText += cardText);
     });
   
-    document.querySelector("p").innerHTML = dataText;
+    document.querySelector("p.simplify-text").innerHTML = dataText;
   }
   
 renderTextData();
