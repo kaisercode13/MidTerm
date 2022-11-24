@@ -671,6 +671,7 @@
     width: 100px;
     height: 30px;
     margin-bottom: 30px;
+    position:inherit;
 }
 
 .footer-links{
@@ -877,13 +878,8 @@ p {
 
   /* Media Queries */
 
-  @media all and (min-width: 992px) {
-  .burger {
-    display: none;
-  }
-}
   
-  @media only screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
     /* Navbar */
     .container-navbar {
@@ -1041,6 +1037,13 @@ p {
       margin-left: 0px;
     }
 
+    .textfield-wrapper {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+
 /* Services Section */
 .services-grid {
   grid-template-columns: 1fr;
@@ -1056,11 +1059,16 @@ p {
 
     /* Footer */
 
-    .footer-container {
+    .footer .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      width: auto;
+      margin-bottom: 50px;
+    }
+
+    .footer-container img {
+      align-content: center;
     }
   
     .footer-address p {
@@ -1076,10 +1084,17 @@ p {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
     }
+
+    /* Simplify Page*/
+
+    .simplify-img {
+      width: 50%;
+    }
+
     
     
   }
-    @media only screen and (max-width: 773px) {
+  @media screen and (max-width: 600px) {
     
 
     /* Projects Section */
@@ -1101,6 +1116,7 @@ p {
     }
     
     }
+
 
     /* Contact Page */
 

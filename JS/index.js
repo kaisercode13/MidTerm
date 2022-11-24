@@ -43,7 +43,7 @@ renderData();
 // Simplify Page --- Main Project Description
 
 async function getTextData() {
-    let urlPost = "https://jsonplaceholder.typicode.com/posts/1";
+    let urlPost = "https://jsonplaceholder.typicode.com/posts/4";
     try {
       let resPost = await fetch(urlPost);
       return await resPost.json();
@@ -58,12 +58,12 @@ async function getTextData() {
     let dataText = "";
     infoText.forEach((item) => {
       let cardText = `
-    <p class="simplify-text">${item.body}</div>`;
+    <p class="simplify-text">${item.body}</p>`;
   
       return (dataText += cardText);
     });
   
-    document.querySelector("p.simplify-text").innerHTML = dataText;
+    document.querySelector("simplify-text").innerHTML = dataText;
   }
   
 renderTextData();
