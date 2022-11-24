@@ -81,6 +81,7 @@
 .navbar-link{
     color: #6B708D;
     text-decoration: none;
+    transition: 0.7s ease;
 }
 .navbar-link:first-child{
     color: #0082f3;
@@ -103,7 +104,20 @@
 
 /* Burger Menu */
 
+.burger {
+  display: block;
+  cursor: pointer;
+  color: #000;
+}
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
   
 
   /* Container 1 - Hero Section */
@@ -869,7 +883,7 @@
     color: #292e47;    
 }
 
-p {
+.simplify.text {
     margin-bottom: 10px;
     font-size: 20px;
     color: #292e47;    
@@ -879,7 +893,7 @@ p {
   /* Media Queries */
 
   
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
     /* Navbar */
     .container-navbar {
@@ -894,6 +908,34 @@ p {
     .navbar-contact-button {
       display: none;
     }
+
+    /* Hamburger Menu */
+    .burger {
+      display: block;
+    }
+
+    .navbar-menu-desktop {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: gray;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .navbar-link {
+      margin: 16px 0;
+    }
+
+    .navbar-menu-desktop.active {
+      left: 0;
+    }
+
+
+
     /* Hero Section */
     .hero-section {
       padding-top: 0px;
@@ -1068,8 +1110,7 @@ p {
     }
 
     .footer-container img {
-      align-content: center;
-    }
+      vertical-align: middle;    }
   
     .footer-address p {
       text-align: center;
@@ -1088,13 +1129,13 @@ p {
     /* Simplify Page*/
 
     .simplify-img {
-      width: 50%;
+      width: auto;
     }
 
     
     
   }
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     
 
     /* Projects Section */

@@ -42,30 +42,28 @@ renderData();
 
 // Simplify Page --- Main Project Description
 
-async function getTextData() {
-    let urlPost = "https://jsonplaceholder.typicode.com/posts/4";
-    try {
-      let resPost = await fetch(urlPost);
-      return await resPost.json();
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  
-  async function renderTextData() {
-    let infoText = await getTextData();
-   
-    let dataText = "";
-    infoText.forEach((item) => {
-      let cardText = `
-    <p class="simplify-text">${item.body}</p>`;
-  
-      return (dataText += cardText);
-    });
-  
-    document.querySelector("simplify-text").innerHTML = dataText;
-  }
-  
-renderTextData();
+const getSimplifyText = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((res) => {
+        document.querySelector(".simplify-title").innerText =
+          res[0].title.slice(0, 20);
+        document.querySelector(".simplify-text").innerText = res[0].body;
+      });
+  };
+  getSimplifyText();
 
+// Hamburger Manu
 
+const burger = document.querySelector(".burger");
+const navMenu = document.querySelector(".navbar-menu-desktop");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".navbar-link").forEach(n => n.addEventListener("click", () => {
+    burger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
