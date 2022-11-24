@@ -807,6 +807,80 @@
     background-color: #292e47;
   }
 
+  /* Simplify Page CSS */
+
+  .simplify-section { 
+    margin-top: 70px;
+    padding: 0px 30px;
+}
+
+.simplify-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.simplify-title {
+    font-size: 60px;
+    line-height: 44px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.simplify-content{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.simplify-description{
+    color: #6b708d;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.simplify-timeframe{
+    display: flex;
+}
+
+.simplify-completion{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.simplify-date{
+    color: #6b708d;
+    font-size: 20px;
+}
+
+.simplify-img{
+    position: relative;
+    margin-top: 80px;
+    width: 1100px;
+    height: 444px;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.simplify-text{
+    margin-top: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #292e47;    
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #292e47;    
+}
+
+
   /* Media Queries */
 
   @media all and (min-width: 992px) {

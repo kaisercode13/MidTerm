@@ -29,3 +29,5 @@ Remato estructura general de CSS e inicio los trabajos para adaptar los diferent
 Se complica el tema del burger y lo dejamos para mañana.
 
 Día de mucho retoque estético.
+
+## Jueves 24 de noviembre
