@@ -31,3 +31,9 @@ Se complica el tema del burger y lo dejamos para mañana.
 Día de mucho retoque estético.
 
 ## Jueves 24 de noviembre
+
+Trabajo de responsive que está llevando más de lo esperado.
+
+Creación del código JS para realizar los fetch de proyectos y para acabar de configurar correctamente el formulario de contacto.
+
+Pelea con el burger menu, parece que al final sale la cosa.
