@@ -18,7 +18,7 @@ async function getData() {
     info.forEach((item) => {
       let cardInfo = `<section class="projects">
                               <img
-                                  src="../src/projects-section/${item.id}.jpg"
+                                  src="https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/projects-section/${item.id}.jpg"
                                   alt="imagen"
                                   class="project-img"
                               />
