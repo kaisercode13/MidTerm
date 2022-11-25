@@ -1,7 +1,7 @@
 // Projects Container - Home & Simplify
 
 async function getData() {
-    let url3 = [`http://jsonplaceholder.typicode.com/posts/?_limit=3`];
+    let url3 = [`https://jsonplaceholder.typicode.com/posts/?_limit=3`];
     
     try {
       let res = await fetch(url3);
