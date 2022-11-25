@@ -37,3 +37,13 @@ Trabajo de responsive que está llevando más de lo esperado.
 Creación del código JS para realizar los fetch de proyectos y para acabar de configurar correctamente el formulario de contacto.
 
 Pelea con el burger menu, parece que al final sale la cosa. Gracias Jarko por el video.
+
+## Viernes 25 de noviembre
+
+Corrección de errores de carga de imágenes a través de Cloudinary con ayuda de Diego.
+
+Corrección de lo que me cargué ayer en CSS.
+
+Revisión JS formulario.
+
+Realización documento presentación.
