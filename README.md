@@ -44,6 +44,11 @@ Corrección de errores de carga de imágenes a través de Cloudinary con ayuda d
 
 Corrección de lo que me cargué ayer en CSS.
 
-Revisión JS formulario.
+Revisión JS formulario. Más o menos lo hemos sacado con la yuda de Jarko y Aleix.
 
 Realización documento presentación.
+
+Presentación de proyecto.
+
+- [Vercel Project Link](https://mid-term-xi.vercel.app/index.html)
+- [Google Sheets Presentación](https://docs.google.com/presentation/d/1sTMq4vpRmnzbIw6ZqzjH_-csqi8C04scArduOPoCi0o/edit#slide=id.g1990f407335_0_3)

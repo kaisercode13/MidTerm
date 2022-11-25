@@ -1,9 +1,9 @@
 
 const sendData = (event) => {
-console.log("hasta luego cocodrilo");
+// console.log("hasta luego cocodrilo");
   event.preventDefault();
   
-  console.log("Hola pepsicola");
+  // console.log("Hola pepsicola");
 
     //Definición de variables de acceso a DOM
   

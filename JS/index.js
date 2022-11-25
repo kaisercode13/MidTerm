@@ -17,19 +17,15 @@ async function getData() {
     let dataCard = "";
     info.forEach((item) => {
       let cardInfo = `<section class="projects">
-                              <img
-                                  src="https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/projects-section/${item.id}.jpg"
-                                  alt="imagen"
-                                  class="project-img"
-                              />
-                              <div class="projects-description">
-                                  <h3  class="dataH3">${
-                                    item.title.split(" ")[0]
-                                  } ${item.title.split(" ")[1]}</h3>
-                                  <div class="text data-description">${item.body.slice(0,20)}</div>
-                                  <a href="../HTML/simplify.html" class="learnMore">learn more</a>
-                              </div>
-                          </section>`;
+      <img src="https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/projects-section/${item.id}.jpg"
+      alt="imagen"
+      class="project-img"/>
+      <div class="projects-description">
+      <h3  class="dataH3">${item.title.split(" ")[0]} ${item.title.split(" ")[1]}</h3>
+      <div class="text data-description">${item.body.slice(0,20)}</div>
+      <a href="../HTML/simplify.html" class="learnMore">learn more</a>
+      </div>
+      </section>`;
   
       return (dataCard += cardInfo);
     });
