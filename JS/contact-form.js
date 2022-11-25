@@ -19,7 +19,7 @@ function sendData(event) {
         name: name,
         email: email,
         phone: phone,
-        message: catchPhrase,
+        catchPhrase: message,
       }),
     })
       .then((response) => response.json())

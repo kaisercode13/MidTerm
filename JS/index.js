@@ -26,7 +26,7 @@ async function getData() {
                                   <h3  class="dataH3">${
                                     item.title.split(" ")[0]
                                   } ${item.title.split(" ")[1]}</h3>
-                                  <div class="text data-description">${item.body}</div>
+                                  <div class="text data-description">${item.body.slice(0,20)}</div>
                                   <a href="../HTML/simplify.html" class="learnMore">learn more</a>
                               </div>
                           </section>`;
