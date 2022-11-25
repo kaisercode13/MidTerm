@@ -41,4 +41,4 @@ function sendData(event) {
   }
   
   //Evetn Listener para el botón submit
-  let inputs = document.querySelector("#addPost").addEventListener("submit", sendData);
+  let inputs = document.querySelector("#addPost").addEventListener("submit", addPost);
