@@ -268,7 +268,7 @@
     }
 
 
-    /* Contact Page */
+    /* Contact Page  - Reduce correctamente, pero no vuelve a posición inicial al agrandar pantalla*/
 
     /* .contact-heading {
       margin-bottom: 40px;

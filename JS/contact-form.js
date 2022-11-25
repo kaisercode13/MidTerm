@@ -1,36 +1,47 @@
-//PreventDefault para evitar que la página recargue
-function sendData(event) {
-    event.preventDefault();
+
+const sendData = (event) => {
+console.log("hasta luego cocodrilo");
+  event.preventDefault();
   
+  console.log("Hola pepsicola");
+
     //Definición de variables de acceso a DOM
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let message = document.getElementById("message").value;
+  
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
+    //let message = document.getElementById("message").value;
   
     //API Fetch
+  
     fetch("https://jsonplaceholder.typicode.com/users", {
       method: "POST",
       headers: {
+    
         Accept: "text/plain, application/json, */*",
+  
         "Content-type": "application/json",
       },
       body: JSON.stringify({
-        name: name,
-        email: email,
-        phone: phone,
-        catchPhrase: message,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        //catchPhrase: message,
       }),
     })
       .then((response) => response.json())
-      .then((data) => { console.log(data); })
+      .then((data) => console.log(data))
       .then(() => {
         let formDone = document.querySelector(".form-done");
         formDone.style.display = "block";
         console.log("YAY!");
       })
-      
-      .then(() => inputs.reset())
+      .then(() => {
+        name.value = '';
+        email.value = '';
+        phone.value = '';
+        message.value = '';
+      })
       .catch((error) => {
         let formFail = document.querySelector(".form-fail");
         formFail.style.display = "block";
@@ -41,4 +52,9 @@ function sendData(event) {
   }
   
   //Evetn Listener para el botón submit
-  let inputs = document.querySelector("#addPost").addEventListener("submit", addPost);
+
+  //document.getElementById("form-5").addEventListener("submit", sendData);
+
+const form = document.getElementById('form-5')
+  console.log(form);
+  form.addEventListener('click', (e) => sendData(e))
