@@ -325,7 +325,7 @@
     margin-right: auto;
     margin-left: auto;
     background-color: #292e47;
-    background-image: url(../src/testimonial-section/orbit.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/testimonial-section/orbit_mpqmww.png);
     background-position: 0px 0px;
     background-size: contain;
     color: #292e47;
@@ -372,7 +372,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url(../src/testimonial-section/profile.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/testimonial-section/profile_rhwvuq.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -405,7 +405,7 @@
     bottom: auto;
     margin-top: 5%;
     margin-left: 10%;
-    background-image: url(../src/testimonial-section/memoji-1.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/testimonial-section/memoji-1_w36swh.png);
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -421,7 +421,7 @@
     bottom: auto;
     margin-top: 5%;
     margin-right: 10%;
-    background-image: url(../src/testimonial-section/memoji-4.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365556/midterm/SRC/testimonial-section/memoji-4_n5rxdk.png);
     background-position: 50% 50%;
     background-size: contain;
   }
@@ -437,7 +437,7 @@
     margin-bottom: 5%;
     margin-left: 10%;
     padding-left: 0%;
-    background-image: url(../src/testimonial-section/memoji-3.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365552/midterm/SRC/testimonial-section/memoji-3_kryrls.png);
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -453,7 +453,7 @@
     bottom: 0%;
     margin-right: 10%;
     margin-bottom: 5%;
-    background-image: url(../src/testimonial-section/memoji-2.png);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365553/midterm/SRC/testimonial-section/memoji-2_eboe27.png);
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@
     padding-left: 0px;
     border-radius: 50%;
     background-color: #ecf7ff;
-    background-image: url(../SRC/services-section/icons/1.svg);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365552/midterm/SRC/services-section/icons/1_lfckoo.svg);
     background-position: 50% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -530,7 +530,7 @@
     padding-left: 0px;
     border-radius: 50%;
     background-color: #ecf7ff;
-    background-image: url(../src/services-section/icons/2.svg);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365552/midterm/SRC/services-section/icons/2_zwi4pb.svg);
     background-position: 50% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -545,7 +545,7 @@
     padding-left: 0px;
     border-radius: 50%;
     background-color: #ecf7ff;
-    background-image: url(../src/services-section/icons/3.svg);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365552/midterm/SRC/services-section/icons/3_pyaduu.svg);
     background-position: 50% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -620,7 +620,7 @@
     bottom: auto;
     width: 30px;
     height: 30px;
-    background-image: url(../SRC/newsletter/icon/mail.svg);
+    background-image: url(https://res.cloudinary.com/dhaz5vv7r/image/upload/v1669365554/midterm/SRC/newsletter/icon/mail_lj0g6b.svg);
     background-position: 50% 50%;
     background-size: auto;
     background-repeat: no-repeat;
